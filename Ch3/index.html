@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--Tomira Jefferson | March 28, 2025 -->
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Week 3 Project: Web 114-300</title>
+            <style>
+                /* No separate CSS file was required, so embedding styles here. */
+                body 
+                    {
+                        background-color: #C5C5C5; /* Medium Dark Gray */
+                        color: #333333;             /* Dark Gray */
+                        font-family: Helvetica, Arial, sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        height: 100vh; 
+                        display: flex;
+                        justify-content: center;  /* Centers the container horizontally */
+                        align-items: center;      /* Centers the container vertically */
+                    }
+
+                .container 
+                    {
+                        background-color: white;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                        padding: 30px;
+                        border-radius: 8px;
+                        width: 80%;
+                        max-width: 1000px;
+                    }
+
+                header 
+                    {
+                        background-color: #4682B4; /* Steel Blue */
+                        color: white;
+                        padding: 10px 20px;
+                        font-size: 1.5rem;
+                        text-align: left;
+                    }
+
+                h1 
+                    {
+                        color: #091E3E; /* Dark Blue */
+                        font-size: 22pt;
+                        margin-bottom: 5px;
+                    }
+
+                p 
+                    {
+                        font-size: 1rem;
+                        line-height: 18pt;
+                    }
+
+                ol 
+                    {
+                        margin-top: 10px;
+                    }
+
+                hr 
+                    {
+                        border: 1px solid #6495ED; /* Cornflower Blue */
+                        margin-top: 0; 
+                        margin-bottom: 20px;
+                        width: 100%; /* Ensures it stretches across the container */
+                    }
+
+                footer 
+                    {
+                        color: black;
+                        font-size: 10pt;
+                        text-align: left;
+                        font-style: italic;
+                    }
+
+            </style>
+        </head>
+        <body>
+
+            <div class="container">
+                <header>Week 3 Project: Web 114-300</header>
+
+                <main>
+                    <section>
+                        <h1>Questions</h1>
+                        <hr> <!-- Horizontal line -->
+
+                        <h3>Question 1: Name a situation where you would need to create an "if" statement.</h3>
+                        <p>In the situation of checking user credentials for a website, using an if statement is necessary. If the user enters the right credentials, then access will be granted.</p>
+
+                        <h3>Question 2: When comparing values, in what data type is the result stored?</h3>
+                        <p>The result is stored as a boolean. This is because the result can only be true or false, one or the other. For example:</p>
+                        <p><span class="example">let answer = 150 > 125;</span></p>
+                        <p><span class="example"><i>console.log(answer);  // 150 is greater than 125. So this will be: true</i></span></p>
+                        <p><span class="example"><strong>therefore, the answer is a boolean (true)</strong></span></p>
+                    </section>
+
+                    <section>
+                        <h1>Exercises</h1>
+                        <hr> <!-- Horizontal line -->
+                        <ol>
+                            <li>Create a prompt that will ask the user for his or her name. Add a statement that declares a variable named username and assign the variable to the value of the answer given to a JavaScript prompt.</li>
+                            <li>Add a confirm statement that will ask the user permission to use his or her name on the web page. Then, create a variable named proceed and assign the variable to the value of the answer given to a JavaScript confirm.</li>
+                            <li>Write a traditional if - else statement using the variable called proceed that will test if the value is true or false and execute different statements depending on the answer.</li>
+                            <li>IF the value of the proceed variable is true, console log the text "Yes, I can use your name on this page" and the username value.</li>
+                            <li>IF the proceed variable is false, console log the text "No, you can not use my name on this web page. Privacy Please".</li>
+                            <li>Prompt the user for his or her age, and store the result in a variable named age.</li>
+                            <li>Create an alert box that says Hi [username]! You are [age] years old.</li>
+                        </ol>
+                    </section>
+
+                    <hr> <!-- Horizontal line -->
+                    <footer>
+                        03/28/2025 | Web 114-300 | Prof. Hanna  
+                    </footer>
+                </main>
+                
+
+            </div>
+
+            <script>
+                // Exercise 1: Prompt user for their name and assign it to the username variable
+                let username = prompt("Please enter your name:");  // Asks user for their name
+
+                // Exercise 2: Create a confirm statement asking for permission to use the user's name
+                let proceed = confirm("Do you agree to use of your name on this web page?");  // This asks the current user for permission
+
+                // Exercise 3: If-else statement to test if the user allows the name to be used
+                if (proceed) {
+                // Exercise 4: If proceed is true, log a message saying we can use their name
+                    console.log(`Yes, I can use your name on this page: ${username}`); // User wishes to proceed with name use
+                } else {
+                // Exercise 5: If proceed is false, log a message saying we cannot use their name
+                    console.log("No, you can not use my name on this web page. Privacy Please."); // No, user wants privacy
+                }
+
+                // Exercise 6: Prompt user for their age and store the result in the age variable
+                let age = prompt("How old are you?");  // Asks user for their age
+
+                // Exercise 7: Alert box displaying the username and age
+                alert(`Hello ${username}. You are ${age} years old.`);  // Shows an alert with the user's name and age
+            </script>
+
+        </body>
+    </html>
