@@ -20,7 +20,7 @@ This project is a simple interactive web page for my JavaScript college class. I
 
 ## Notes
 - This project is self-contained (no external files needed).
-- Created as part of Web 114-300 coursework.
+- Created as part of Web 114-300 coursework for Prof. A. Hanna at JCCC, OP KS
 
 ## Author
 Tomira Jefferson (KaitHQ)
