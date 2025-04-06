@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--Tomira Jefferson | April 6, 2025 -->
+	<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Week 4 Project: Switch Statements</title>
+			<style>
+	            /* CSS Style */
+	            body 
+	                {
+		                background-color: #C5C5C5; /* Medium Dark Gray */
+		                color: #333333; /* Dark Gray */
+		                font-family: Helvetica, Arial, sans-serif;
+		                margin: 0;
+		                padding: 0;
+		                height: 100vh; 
+		                display: flex;
+		                justify-content: center;  /* Centers the container horizontally */
+		                align-items: center;      /* Centers the container vertically */
+	                }
+
+	                .container 
+	                {
+	                    background-color: white;
+	                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	                    padding: 30px;
+	                    border-radius: 8px;
+	                    width: 80%;
+	                    max-width: 1000px;
+	                }
+
+	                header 
+	                {
+	                    background-color: #4682B4; /* Steel Blue */
+	                    color: white;
+	                    padding: 10px 20px;
+	                    font-size: 1.5rem;
+	                    text-align: left;
+	                }
+
+	                h1 
+	                {
+	                    color: #091E3E; /* Dark Blue */
+	                    font-size: 22pt;
+	                    margin-bottom: 5px;
+	                }
+
+	                p 
+	                {
+	                    font-size: 1rem;
+	                    line-height: 18pt;
+	                }
+
+	                ol 
+	                {
+	                    margin-top: 10px;
+	                }
+
+	                hr 
+	                {
+	                    border: 1px solid #6495ED; /* Cornflower Blue */
+	                    margin-top: 0; 
+	                    margin-bottom: 20px;
+	                    width: 100%; /* Ensures it stretches across the container */
+	                }
+
+	                footer 
+	                {
+	                    color: black;
+	                    font-size: 10pt;
+	                    text-align: left;
+	                    font-style: italic;
+	                }
+
+	        </style>
+		</head>
+	    <body>
+
+	        <div class="container">
+	            <header>Week 4 Project: Web 114-300</header>
+
+	            <main>
+	                <section>
+	                    <h1>Questions</h1>
+	                    <hr> <!-- Horizontal line -->
+
+	                    <h3>Question 1: When would you use a switch statement in your projects?</h3>
+	                    <p>Using switch statements are very useful when you have multiple possible answers and you want to tidy up your code instead of having several if, else if, else if, else if, etc etc. Using a switch statement eliminates the need for the if, else if, else statements, the curly brackets, and it overall makes the code look tidier.</p>
+	                    </section>
+
+	                    <section>
+	                        <h1>Exercises</h1>
+	                        <hr> <!-- Horizontal line -->
+	                        <ol>
+							    <li><strong>Instructions:</strong> You will create a program that displays a message based on the user's favorite day.</li>
+							    
+							    <li><strong>Prompt for favorite day:</strong>  
+							        The program uses <code>prompt</code> to ask the user for their favorite day and stores it in the <code>favDay</code> variable.  
+							        <pre><code>const favDay = prompt("What is your favorite day of the week? (e.g., Monday, Tuesday)");</code></pre>
+							    </li>
+
+							    <li><strong>Switch statement:</strong>  
+							        Use a <code>switch</code> statement with <code>favDay.toLowerCase()</code> to convert the input to lowercase for case-insensitive comparison.  
+							        <pre><code>switch (favDay.toLowerCase()) {</code></pre>
+							    </li>
+
+							    <li><strong>Cases:</strong>  
+							        Inside the switch statement, each case block checks if <code>favDay</code> matches a specific day of the week (converted to lowercase).  
+							        If a match is found, the corresponding message is displayed using <code>console.log</code>.  
+							        Each case block needs a <code>break</code> statement to exit the switch statement after displaying the message.
+							    </li>
+
+							    <li><strong>Default case:</strong>  
+							        A <code>default</code> case handles any input that doesn't match a specific day. It displays a generic message.
+							    </li>
+							</ol>
+
+	                    </section>
+
+	                    <hr> <!-- Horizontal line -->
+	                    <footer>
+	                        04/06/2025 | Web 114-300 | Prof. Hanna  
+	                    </footer>
+	                </main>                
+
+	            </div> <!--End of main content section -->
+
+			<script> 
+				
+			const favDay= prompt("What is your favorite day of the week?"+"eg: Monday, Tuesday, Wednesday, etc."); // Step 1: Prompt the user for their favorite day.
+			switch (favDay.toLowerCase()) { // Step 2: Use Switch Statement
+				case "monday": // Step 3-9: Use Cases
+					console.log("Monday: That's amazing! Mondays are difficult for many people.");
+					break;
+				case "tuesday":
+					console.log("That's interesting! Mine too!");
+					break;
+				case "wednesday":
+					console.log("Happy Hump Day!");
+					break;
+				case "thursday":
+					console.log("It's almost the weekend!");
+					break;
+				case "friday":
+					console.log("Yeah! Friday. Best day of the week.");
+					break;
+				case "saturday":
+					console.log("It's the weekend!");
+					break;
+				case "sunday":
+					console.log("Rumor has it, that it's a day of rest. Good choice.");
+					break;
+				default: // Use default case to display a generic message when a specific case (day of week) is not entered.
+					console.log("So every day is your favorite day? \u{1F914}"); 
+		}
+			</script>
+
+			</body>
+
+	</html>
