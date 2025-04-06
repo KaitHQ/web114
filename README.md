@@ -8,7 +8,7 @@ This repository contains projects and assignments for the Web 114 JavaScript cla
 
 ## Project List
 - **Week 3 Project:** Basic JavaScript exercises involving user input, conditionals, and console logging.
-- More projects will be added throughout the semester.
+- **Week 4 Project:** Switch Statements
 
 ## License
 This project is for educational purposes only.
