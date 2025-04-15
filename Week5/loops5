@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<!-- T Jefferson 4/15/2025 -->
+
+  <html lang="en">
+    <head>
+      <title>For Loops and While Loops</title> <!-- Are we supposed to ask questions via email or the discussion posts? -->
+      <meta charset="utf-8" />
+      <style> //* I like to add styles to practice my HTML/CSS skills. Hope that's okay with you. *//
+        body, p
+          {
+            font-family: Helvetica, Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 20px;
+            text-align: center;
+          }
+
+        .message-box 
+          {
+            border: 1px solid #2196f3;
+            background-color: #e3f2fd;
+            margin: auto;
+            padding: 15px;
+            border-radius: 8px;
+            max-width: 400px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+
+        h1
+          {
+            color: #2196f3;
+            font-size: 22px;
+            text-align: center;
+          }
+
+      </style>
+    </head>
+    
+    <body>
+
+      <h1>For loops and while loops</h1> <!--- Week 5 Project --->
+
+      <div class="message-box">
+        <span>I'm testing my JS code. Please press <strong>F12</strong> to view the console outputs for my script. Have a great week, Professor Hanna!</span>
+        
+      </div>
+      <!--Week 5 Project- Working with a for loop and a while loop starts here -->
+      <script> 
+
+        let i = 1
+
+        for(let i=1; i <= 5; i++) {
+          let drink; //created a variable for drink type for ${}
+
+        if (i === 3) { // if slot #3 is selected,
+          drink = "Cola"; // then Cola is dispensed.
+
+        } else if (i === 4) { // if slot #4 is selected,
+          drink = "Super Drink"; // then the Super Drink is dispensed.
+
+        } else if (i === 5) { // if slot #5 is selected,
+          drink = "Orange Juice"; // then Orange Juice is dispensed.
+
+        } else { // But if any other slot besides 3-5 is selected,
+          drink = "Water"; // then water is dispensed.
+        }
+
+          console.log(`Loading slot number ${i} dispenses ${drink}.`); // Instead of console.logging two, I combined into one.
+      }
+
+      </script> 
+      <!-- Week 5 Project script ends here. -->
+
+    </body>
+
+  </html>
