@@ -1,7 +1,7 @@
 # Week 7 – Weekly Gas Average Script
 
 **Author:** Tomira Jefferson (KaitHQ)  
-**Date:** April 22, 2925
+**Date:** April 22, 2025
 
 ## Project Overview
 
