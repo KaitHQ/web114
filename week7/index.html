@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Tomira Jefferson | 4/22/25 -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate Average Weekly Gas Bill</title>
+  </head>
+  <body>
+    <h2>What is the Purpose of a Function?</h2>
+    <hr>
+      <p>A function in JavaScript is a reusable block of code designed to perform a specific task when called.</p>
+
+      <!-- Weekly gas average script begins here -->
+      <script>
+        let name = prompt("Hi there, what's your name?"); // Ask for user's name
+        let gasAvg = calcGasAvg(); // Call function to calculate average
+        console.log(gasAvg); // Log the average for testing
+      
+        // Confirm the user's name and gas average (2 decimal places)
+        confirm(`Voila! ${name} your average weekly gas bill is $` + gasAvg.toFixed(2));
+      
+        function calcGasAvg() {
+          let count = 0; // Number of valid entries
+          let total = 0; // Total of all entries
+          let weeklyGas = parseFloat(
+            prompt(`Okay ${name}, Enter your FIRST weekly gas total. If this is your only entry, enter -1 on the next screen to end calculation.`)
+          );
+      
+          while (weeklyGas !== -1) {
+            total += weeklyGas; // Add to total
+            count++; // Increase entry count
+            weeklyGas = parseFloat(
+              prompt(`Do you have another, ${name}? If so, enter another weekly gas total now. Keep going until you're finished. Then enter -1 to end calculation and get your average.`)
+            );
+          }
+      
+          return total / count; // Calculate and return the average
+        }
+      </script>
+      <!-- Weekly gas average script ends here -->
+  </body>
+</html>
