@@ -1,0 +1,149 @@
+/* css */
+/* Apply a nice background and center everything */
+body 
+    {
+        background-color: #f0f2f5;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column; /* This makes content stack vertically */
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+/* Current Date */
+#current-date
+    {
+        text-align: right;  
+    }
+
+/*Styles for Questions & Answer section */
+.qa-section 
+    {
+        max-width: 700px;
+        margin: 20px auto;
+        background-color: #ffffff;
+        padding: 20px 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        font-family: Arial, sans-serif;
+    }
+    
+.qa-section h2 
+    {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #1f2937;
+    }
+    
+.qa 
+    {
+        margin-bottom: 20px;
+    }
+    
+.qa h3 
+    {
+        color: #07193f;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+.qa p 
+    {
+        margin: 8px 0;
+        line-height: 1.5;
+        color: #374151;
+    }
+    
+pre 
+    {
+        background-color: #f3f4f6;
+        padding: 10px;
+        border-radius: 8px;
+        overflow-x: auto;
+        font-family: monospace;
+        color: #3524d1;
+    }
+
+/* Main to-do container */
+.todo-container 
+    {
+        background-color: #cfe3bd;
+        padding: 30px 40px;
+        border: 1px solid rgb(65, 61, 61);
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+/* Input and button */
+#taskInput 
+    {
+        width: 70%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 16px;
+    }
+
+#addTaskBtn 
+    {
+        padding: 10px 15px;
+        margin-top: 10px;
+        margin-left: 10px;
+        border: none;
+        background-color: #041f4b;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+#addTaskBtn:hover 
+    {
+        background-color: #ef5800b1;
+        color: black;
+    }
+
+/* Task list items */
+#taskList 
+    {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+        text-align: left;
+        
+    }
+
+#taskList li 
+    {
+        background-color: #d2deea;
+        padding: 10px 12px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        display: flex;
+        border-bottom: 1px solid grey;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+/* Remove button as icon */
+.material-icons 
+    {
+        cursor: pointer;
+        color: #ef4444;
+    }
+
+.material-icons:hover 
+    {
+        color: #dc2626;
+    }
+
+
+/* End of styles */

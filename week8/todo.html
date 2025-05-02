@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- Tomira Jefferson | May 2, 2025 -->
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="iconstyles">
+      <link href="styles.css" rel="stylesheet">
+      <title>To-Do-List | Web 114</title>
+    </head>
+    <body>
+      <!-- Questions & Answers section begins here -->
+      <section class="qa-section">
+        <p id="current-date"></p>
+        <h2>Questions & Answers</h2>
+        <div class="qa">
+          <h3>Why is the JavaScript textContent property safer than innerHTML?</h3>
+          <p>
+            textContent is safer because it just adds plain text into a webpage and it doesn't treat anything like HTML code. So even if someone tries to sneak in a script or some malicious code, it won't run. On the other hand, innerHTML will treat what you insert as real HTML, which means it can accidentally allow dangerous stuff to run if you're not careful. Safety is important, so for simpler tasks like adding text, textContent is the better and safer choice.
+          </p>
+        </div> <!-- End of first Q&A-->
+        <div class="qa">
+          <h3>Explain the relationship between an HTML attribute and a corresponding DOM property. Use a specific example.</h3>
+          <p>
+            An HTML attribute is what you write in the HTML file, while a DOM property is how you work with that element using JavaScript once the page has loaded. For example, if you have this in your HTML:
+          </p>
+          <pre>&lt;input type="text" id="nameField" value="Tomira"&gt;</pre>
+          <p>
+            The value "Tomira" is the attribute. It sets the starting value. But in JavaScript, you can <strong>grab</strong> that field by means of a document.getElementById function and change its value like this:
+          </p>
+          <pre>document.getElementById("nameField").value = "Zelda";</pre>
+          <p>
+            Changing the <strong><u>value</u></strong> property updates what appears in the input box, 
+            but doesn't affect the original HTML attribute. You can change those values in the console.
+          </p>
+        </div> <!-- End of second Q&A -->
+      </section> <!--Question & Answer section ends here -->    
+      <!-- To Do List container begins here -->
+      <div class="todo-container">
+        <h1>To-Do-List</h1>
+          <p>Add items to create an awesome list! </p>
+          <p>Task: <input type="text" id="taskInput">
+          <button id="addTaskBtn">Add Task</button></p>
+        <h2>Current Tasks</h2>
+          <ul id="taskList"></ul>
+      </div> 
+      <!--To Do List container ends here -->
+      <!-- Script to external source at todo.js starts here -->
+      <script src="todo.js"></script>
+      <!-- Script ends here -->
+
+    </body>
+
+  </html>
