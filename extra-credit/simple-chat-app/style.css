@@ -1,0 +1,143 @@
+/* Tomira Jefferson | May 5, 2025 
+Styles for Simple Chat App | Web 114 */
+
+body 
+        {
+            font-family: "courier new", Arial, sans-serif;
+            background-color:  #544da0; /* Color: Goober Grape */
+            border:1px solid darkblue;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+/* Styling for heading fonts */
+h1, h2, footer 
+        {
+            color: #fffff;
+            font-family: "courier new", Arial, sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+h3 
+        {
+            color: #fffff;
+            font-family: "courier new", Arial, sans-serif;
+            text-align: center;
+        }
+
+.container 
+        {
+            width:100%; 
+            max-width: 500px;
+        }
+
+#chat-area 
+        {
+            height: 300px;
+            background-color: #fff;
+            color: #000;
+            border:1px solid darkgrey;
+            border-radius: 10px;
+            padding: 10px;
+            overflow-y: scroll;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+#chat-area::before 
+        {
+            content: "Start chatting...";
+            color: #45369d;
+            font-style: italic;
+            display: block;
+            font-size: 1.5em;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+#chat-area:has(.message)::before 
+        {
+            display: none;
+        }
+
+.input-row 
+        {
+            display: flex;
+            gap: 10px;
+        }
+
+#message-input 
+        {
+            flex: 1;
+            padding: 10px;
+            border-radius: 5px;
+            border:1px solid darkgrey;
+            font-size: 16px;
+        }
+
+#send-button 
+        {
+            background-color: forestgreen;
+            color: white;
+            border:1px solid darkgreen;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+#clear-button 
+        {
+            background-color: orangered;
+            color: white;
+            border:1px solid darkred;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+.message 
+        {
+            background-color: #f0f0f0;
+            padding: 8px 12px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+.message p 
+        {
+            margin: 0;
+        }
+
+.message .remove 
+        {
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            color: red;
+            cursor: pointer;
+        }
+
+/* Timestamp feature*/
+.message .timestamp 
+        {
+            display: block;
+            font-size: 0.75em;
+            color: slateblue;
+            margin-top: 4px;
+        }
