@@ -12,6 +12,7 @@ This repository contains projects and assignments for the Web 114 JavaScript cla
 - **Week 5 Project:** For Loops & While Loops
 - **Week 7 Project:** Calculate average weekly gas
 - **Week 8 Project:** Dynamic To Do List with Event Listeners
+- **Week 8 Extra Credit:** Simple Chat App
 
 ## License
 This project is for educational purposes only.
