@@ -1,0 +1,116 @@
+/* Tomira Jefferson | May 14, 2025 */
+body
+    {
+      color: black;
+      font-family: Helvetica, Arial, sans-serif;
+      border: 2px solid steelblue;
+      background-color: azure;
+      background-image: url("sunset.jpg");
+      background-repeat: none;
+      display:flexbox;
+    
+    }
+
+/* Header */
+header
+    {
+      background-color: steelblue;
+      border: 1px solid slategray;
+      height: auto;
+      padding-left: 20px;
+      color: white;
+      font-size: 2.5em;
+      text-transform: capitalize;
+      text-shadow: 2px 2px 5px black;
+      opacity: 0.9;
+      font-weight: bold;
+
+    }
+
+/* Container */
+.container
+    {
+      background-color: azure; 
+      border: 1px solid slategray;
+      margin: auto;
+      padding: 20px;
+      max-width: auto;
+    }
+
+/* Quizbox */
+.quizbox
+    {
+      background-color: whitesmoke;
+      border: 1px solid steelblue;
+      border-radius: 5px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+      margin: 0;
+      padding-top: 0.5px;
+      padding-right: 25px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      max-width: auto;
+    }
+
+/* Question Labels */
+.questionlabels
+    {
+      font-weight: bold;
+      text-decoration: underline;
+      color: navy;
+    }
+
+/* Score Output */
+.correctAnswers 
+    {
+      background-color: #f2f5c5;
+      padding: 10px;
+      border-radius: 6px;
+      font-family: sans-serif;
+      font-size: 18px;    
+    }
+
+.correctAnswers ul 
+    {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+/* Horizontal Line */
+hr
+    {
+      border: 1px dashed salmon;
+    }
+
+/* Footer */
+footer
+    {
+      background-color: steelblue;
+      border: 1px solid slategray;
+      height: auto;
+      padding-left: 20px;
+      color: white;
+      font-size: 1em;
+      text-transform: capitalize;
+      text-shadow: 2px 2px 5px black;
+      opacity: 0.9;
+      font-weight: bold;
+      text-align: center;
+      padding: 20px;
+    }
+      
+/* Tablet View*/
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 20px;
+  }
+}
+
+/* Mobile View */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
