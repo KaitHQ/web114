@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- Tomira Jefferson | May 14, 2025-->
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Web 114 Final Project</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+      
+    </head>
+
+    <body>
+
+      <header>
+        <!-- Greeting to the professor appears in heading using a document.write command-->
+        <script>document.write("Greetings, Professor Hanna!");</script> <i class="fas fa-check" style="color: blue;"></i> 
+      </header>
+
+    <main>
+
+      <div class="container">
+      <!-- Main content of the page goes here -->
+
+          <p id="time"></p>
+
+          <h2>Web 114 Final Project</h2>
+          
+            <p><u>What is Javascipt?</u> 
+            <p>JavaScript is what makes websites do more than just sit there. It adds life, like buttons that actually work, pop-ups, or updating info without reloading the page. It runs right in your browser and helps websites feel more like apps you can interact with. Well, let's get started. Good luck!</p>
+  
+          <h3><u>JS Themed Multiple Choice Quiz</u></h3>
+            <p>Please enter your name to get started. When you're finished, click the "Grade Your Quiz" button to receive your results.</p>
+
+            <div class="quizbox"> <!-- JS quiz box starts here -->
+              <form id="quizForm">
+              <p class="questionlabels"><label>Name:</label></p>
+              <input type="text" name="username" placeholder="please enter your name" maxlength="24" required>  ** required
+
+            <!-- Question 1 -->
+              <p class="questionlabels"><label>Question 1:</label></p>
+              <p><label for="answerq1">How does Javascript improve a website?</label></p>
+
+              <select id="answerq1" name="answerq1">
+                  <option value=""> -- Please choose -- </option>
+                  <option value="A">A. It manages the style of your site</option>
+                  <option value="B">B. Adds life to your website</option> <!-- Correct -->
+                  <option value="C">C. It sends data to a database</option>
+                  <option value="D">D. I'm not sure</option>
+              </select>
+
+            <!-- Question 2 -->
+              <p class="questionlabels"><label>Question 2:</label></p>
+              <p><label for="answerq2">Which of the following is the CORRECT way to write a JS comment?</label></p>  
+
+              <select id="answerq2" name="answerq2">
+                  <option value=""> -- Please choose -- </option>
+                  <option value="A">A. // I love Javascript! //</option>
+                  <option value="B">B. /* I love Javascript! /*</option>
+                  <option value="C">C. */ I love Javascript! */</option>
+                  <option value="D">D. /* I love Javascript! */</option> <!-- Correct -->
+                  <option value="E">E. None of the above</option>
+              </select>
+
+            <!-- Question 3 -->
+              <p class="questionlabels"><label>Question 3:</label></p>
+              <p><label for="answerq3">Who invented Javascript and in what year?</label></p>
+              <select id="answerq3" name="answerq3">
+                  <option value=""> -- Please choose -- </option>
+                  <option value="A">A. Bill Gates, 1995</option>
+                  <option value="B">B. Brendan Eich, 1995</option> <!-- Correct -->
+                  <option value="C">C. Mark Zuckerberg, 2001</option>
+                  <option value="D">D. Victor Jones, 1993</option>
+                  <option value="E">E. None of the above</option>
+              </select>
+              <hr>
+              <p>
+                <input type="button" name="submit" value="Grade Your Quiz">
+                <input type="reset" name="reset" value="Start Over">
+              </p>
+              
+              </form>
+              
+              <p>
+
+              </p>
+
+              <script src="script.js"></script>
+
+            </div> <!-- JS quiz box ends here -->
+
+    </main>
+
+      </div> <!-- End of container area-->
+
+    <footer>
+      <!-- Footer content goes here -->
+      &copy;2025-26 Tomira Jefferson  
+    </footer>
+
+    </body>
+
+  </html>
